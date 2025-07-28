@@ -1,0 +1,23 @@
+.SocialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%; 
+    margin: 20px 0;
+  }
+  
+  .SocialLinks a {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 999px; 
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .SocialLinks a:hover {
+    background-color: #ff6f00;
+  }
+  

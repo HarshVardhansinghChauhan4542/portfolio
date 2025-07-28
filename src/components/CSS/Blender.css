@@ -1,0 +1,27 @@
+.Designs {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    font-size: 400%;
+  }
+  
+  .ImagesDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+  }
+  
+  .Images {
+    width: 45%;
+    object-fit: cover;
+  }
+  
+
+  .VideoBlender{
+    width: 50%;
+    object-fit: cover;
+  }
