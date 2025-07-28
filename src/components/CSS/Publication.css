@@ -1,26 +1,42 @@
 .Publication {
-    color: white;
-    display: flex;
-    justify-content: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+  font-size: 400%;
+}
+
+.ImagesDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+}
+
+.Images {
+  width: 45%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (max-width: 768px) {
+  .Publication {
+    font-size: 200%; 
+    padding: 10% 5%;
     text-align: center;
-    padding: 5%;
-    font-size: 400%;
   }
-  
-  .ImagesDiv {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    padding: 50px;
-  }
-  
+
   .Images {
-    width: 45%;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%; 
   }
-  
-  
+
+  .ImagesDiv {
+    padding: 20px;
+    gap: 20px;
+  }
+}

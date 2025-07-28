@@ -4,7 +4,7 @@ const AboutMe = () => {
     return (
         <>
             <div className="about-me">
-                <h3>Hello! I'm Harshvardhan Singh Chauhan, a driven and enthusiastic third-year undergraduate student at the Indian Institute of Technology, Kharagpur, pursuing a Dual Degree in Aerospace Engineering. Beyond the world of aerodynamics and propulsion, I’m a passionate graphic designer and a frontend developer who thrives on creativity, precision, and impact. Whether it’s building seamless web experiences or designing compelling visuals, I love transforming ideas into visually powerful and user-friendly solutions. Always eager to take on new challenges, I'm constantly exploring ways to blend technology and design to craft meaningful digital experiences.</h3>
+                <h3>Hi! I'm Harshvardhan Singh Chauhan, a third-year student at IIT Kharagpur, studying Aerospace Engineering. I’m also a passionate graphic designer and frontend developer. I enjoy creating clean, user-friendly websites and eye-catching designs. I'm always curious to learn new things and love working on creative and meaningful projects.</h3>
             </div>
         </>
     );
