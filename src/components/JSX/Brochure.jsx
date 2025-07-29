@@ -2,10 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-
 gsap.registerPlugin(ScrollTrigger);
 
-const Publication = () => {
+const Brochure = () => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -22,18 +21,18 @@ const Publication = () => {
 
   return (
     <>
-      <h1 className="Publication">Publication</h1>
+      <h1 className="Brochure">Brochure</h1>
       <div className="ImagesDiv" ref={containerRef}>
         <a
           href="https://drive.google.com/file/d/1kA6CgFBve29txCXeK1-GgblMcnxEeSzt/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/18.png" className="Images" alt="Publication" />
+          <img src="/27.png" className="Images" alt="Publication" />
         </a>
       </div>
     </>
   );
 };
 
-export default Publication;
+export default Brochure;

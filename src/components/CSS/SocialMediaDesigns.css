@@ -18,8 +18,26 @@
 .Images {
   width: 45%;
   object-fit: cover;
+  opacity: 0; /* Start hidden */
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  cursor: pointer;
+  pointer-events: none; /* disable until shown */
 }
 
+.ImagesVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.Images:hover {
+  transform: scale(1.05);
+}
+
+
+.Images:hover {
+  transform: scale(1.05); 
+}
 
 @media (max-width: 768px) {
   .Designs {
@@ -28,12 +46,16 @@
   }
 
   .Images {
-    width: 100%; 
-    max-width: 500px; 
+    width: 100%;
+    max-width: 500px;
   }
 
   .ImagesDiv {
     gap: 30px;
     padding: 20px;
+  }
+
+  .Images:hover {
+    transform: scale(1.05); 
   }
 }

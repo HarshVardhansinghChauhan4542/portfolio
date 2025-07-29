@@ -4,10 +4,11 @@
   justify-content: center;
   gap: 5%;
   margin: 20px 0;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .SocialLinks a {
+  position: relative;
   padding: 10px 20px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
@@ -15,14 +16,39 @@
   border-radius: 999px;
   font-size: 20px;
   font-family: sans-serif;
-  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+  overflow: hidden;
   min-width: 120px;
   text-align: center;
+  z-index: 1;
+}
+
+.SocialLinks a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(135deg, #ff6f00, #ffa726);
+  transition: width 0.4s ease;
+  z-index: 0;
+  border-radius: 999px;
+}
+
+.SocialLinks a:hover::before {
+  width: 100%;
 }
 
 .SocialLinks a:hover {
-  background-color: #ff6f00;
+  color: white;
 }
+
+.SocialLinks a span {
+  position: relative;
+  z-index: 2;
+}
+
 
 @media (max-width: 768px) {
   .SocialLinks {

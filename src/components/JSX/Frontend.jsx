@@ -1,29 +1,45 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Frontend = () => {
-    return (
-        <>
-            <h1 className="Designs">Fronted Development Projects</h1>
-            <div className="ImagesDiv">
-                <a
-                    href="https://cyntiaportfolio.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img src="/25.png" alt="Design 1" className="Images" />
-                </a>
+  const containerRef = useRef(null);
 
-                <a
-                    href="https://kgp-now.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img src="/26.png" alt="Design 2" className="Images" />
-                </a>
+  useEffect(() => {
+    const images = containerRef.current.querySelectorAll('.Images');
+    images.forEach((img) => {
+      ScrollTrigger.create({
+        trigger: img,
+        start: 'top 85%',
+        onEnter: () => img.classList.add('ImagesVisible'),
+      });
+    });
+  }, []);
 
-            </div>
-        </>
-    );
+  return (
+    <>
+      <h1 className="Designs">Fronted Development Projects</h1>
+      <div className="ImagesDiv" ref={containerRef}>
+        <a
+          href="https://cyntiaportfolio.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/25.png" alt="Design 1" className="Images" />
+        </a>
+        <a
+          href="https://kgp-now.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/26.png" alt="Design 2" className="Images" />
+        </a>
+      </div>
+    </>
+  );
 };
 
 export default Frontend;

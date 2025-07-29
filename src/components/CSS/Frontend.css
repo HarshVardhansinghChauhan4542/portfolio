@@ -18,7 +18,22 @@
 .Images {
   width: 45%;
   object-fit: cover;
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+  pointer-events: none;
+  cursor: pointer;
 }
+
+.ImagesVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.Images:hover {
+  transform: scale(1.05);
+}
+
 
 @media (max-width: 768px) {
   .Designs {
