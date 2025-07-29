@@ -1,0 +1,38 @@
+.end {
+    color: #ffffff;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    line-height: 1.8;
+    font-weight: 100;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  
+  .end h3 {
+    display: inline-block;
+    background-image: linear-gradient(120deg, #ff6f00, #ffa726);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+    transition: background-size 0.5s ease, -webkit-text-fill-color 0.5s ease;
+  }
+  
+  .end:hover h3 {
+    background-size: 100% 100%;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @media (max-width: 768px) {
+    .end {
+      width: 90%;
+      font-size: 90%;
+      margin-top: 3vh;
+      line-height: 1.6;
+    }
+  }
+  

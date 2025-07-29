@@ -24,7 +24,7 @@ const Brochure = () => {
       <h1 className="Brochure">Brochure</h1>
       <div className="ImagesDiv" ref={containerRef}>
         <a
-          href="https://drive.google.com/file/d/1kA6CgFBve29txCXeK1-GgblMcnxEeSzt/view?usp=sharing"
+          href="https://docs.google.com/presentation/d/1fbzDm8fRAyJmLRgFi6wLb0suuVoPGNvZ1zqAeUhEqgw/edit?slide=id.g262ed8d55c4_1_0#slide=id.g262ed8d55c4_1_0"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -7,6 +7,7 @@ import Blender from './components/JSX/Blender'
 import Publication from './components/JSX/Publication'
 import Frontend from './components/JSX/Frontend'
 import Brochure from './components/JSX/Brochure'
+import End from './components/JSX/End'
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
       <Blender />
       <Publication />
       <Brochure />
+      <End />
     </>
   )
 }
