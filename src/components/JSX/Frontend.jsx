@@ -31,7 +31,7 @@ const Frontend = () => {
           <img src="/25.png" alt="Design 1" className="Images" />
         </a>
         <a
-          href="https://kgp-now.vercel.app/"
+          href="https://frontend-c3dv.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
